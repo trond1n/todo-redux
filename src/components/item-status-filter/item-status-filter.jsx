@@ -10,7 +10,7 @@ const ItemStatusFilter = ({filter, onFilterChange = () => {}}) => {
 
   const buttons = filterButtons.map(({name, label}) => {
     const isActive = name === filter;
-    const classNames = 'btn ' + (isActive ? 'btn-info' : 'btn-outline-secondary');
+    const classNames = 'button' + (isActive ? 'button__active' : 'button__unactive');
 
     return (
       <button key={name}
@@ -21,7 +21,7 @@ const ItemStatusFilter = ({filter, onFilterChange = () => {}}) => {
   });
 
   return (
-    <div className="btn-group">
+    <div>
       { buttons }
     </div>
   );
