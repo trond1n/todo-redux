@@ -1,4 +1,4 @@
-export default class TodoStoreService {
+export default class ItemService {
   getItems() {
     return [];
   }
