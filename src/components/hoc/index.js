@@ -1,7 +1,5 @@
-import {
-    ItemServiceProvider,
-    ItemServiceConsumer,
-  } from "./item-service-context";
+import withItemService from "./with-item-service";
+
   
-  export { ItemServiceConsumer, ItemServiceProvider };
+  export { withItemService };
   

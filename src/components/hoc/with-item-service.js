@@ -6,7 +6,7 @@ const withItemService = () => (Wrapped) => {
     return (
       <ItemServiceConsumer>
         {(itemService) => {
-          <Wrapped {...props} itemService={itemService} />;
+          return( <Wrapped {...props} itemService={itemService} />);
         }}
       </ItemServiceConsumer>
     );

@@ -1,4 +1,6 @@
-import withItemService from "../hoc/with-item-service";
+import {
+  ItemServiceProvider,
+  ItemServiceConsumer,
+} from "./item-service-context";
 
-
-export { withItemService };
+export { ItemServiceConsumer, ItemServiceProvider };
